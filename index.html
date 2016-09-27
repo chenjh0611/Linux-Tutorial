@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Linux-tutorial by chenjh0611</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Linux-tutorial</h1>
+      <h2 class="project-tagline">Java 程序员眼中的 Linux</h2>
+      <a href="https://github.com/chenjh0611/Linux-Tutorial" class="btn">View on GitHub</a>
+      <a href="https://github.com/chenjh0611/Linux-Tutorial/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/chenjh0611/Linux-Tutorial/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="java-程序员眼中的-linux" class="anchor" href="#java-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9C%BC%E4%B8%AD%E7%9A%84-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java 程序员眼中的 Linux</h1>
+
+<h2>
+<a id="初衷original-intention" class="anchor" href="#%E5%88%9D%E8%A1%B7original-intention" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>初衷(Original Intention)</h2>
+
+<ul>
+<li>本系列历时半年之久，初稿预计 2016-04 期间可以结束，所有有些文章是空白或是不完善的。感谢自己坚持下来了。</li>
+<li>整理下自己所学</li>
+<li>带动更多的人进入 Linux 世界，特别是做 Java 开发的人</li>
+<li><strong>学得越多越是明白一个人的力量是不够的，希望你能一起参与，真心希望！！！（鞠躬）</strong></li>
+<li>Github 项目地址，欢迎 <code>Fork</code>、<code>Star</code>：<a href="https://github.com/judasn/Linux-Tutorial">https://github.com/judasn/Linux-Tutorial</a>
+</li>
+</ul>
+
+<h2>
+<a id="目录contents" class="anchor" href="#%E7%9B%AE%E5%BD%95contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>目录(Contents)</h2>
+
+<ul>
+<li><a href="Linux.md">Linux 介绍</a></li>
+<li><a href="Ubuntu.md">Ubuntu 介绍</a></li>
+<li><a href="Ubuntu-Install.md">Ubuntu 安装</a></li>
+<li><a href="ubuntu-settings/ubuntu-settings-toc.md">Ubuntu 设置（目录）</a></li>
+<li><a href="CentOS.md">CentOS 介绍</a></li>
+<li><a href="CentOS-Install.md">CentOS 安装</a></li>
+<li><a href="centos-settings/centos-settings-toc.md">CentOS 设置（目录）</a></li>
+<li><a href="Vim-Install-And-Settings.md">Vim 安装、配置、快捷键列表</a></li>
+<li><a href="Bash.md">Bash 命令</a></li>
+<li><a href="Bash-Other-Bash.md">Bash 其他常用命令</a></li>
+<li><a href="File-Extract-Compress.md">Linux 下常用压缩文件的解压、压缩</a></li>
+<li><a href="Off-line-Yum-Install.md">Yum 下载安装包及对应依赖包</a></li>
+<li><a href="Zsh.md">Zsh 入门</a></li>
+<li><a href="SSH.md">SSH（Secure Shell）介绍</a></li>
+<li><a href="FTP.md">FTP（File Transfer Protocol）介绍</a></li>
+<li><a href="VPN.md">VPN（Virtual Private Network）介绍</a></li>
+<li><a href="NFS.md">NFS（Network FileSystem）介绍</a></li>
+<li><a href="NTP.md">NTP（Network Time Protocol）介绍</a></li>
+<li><a href="Samba.md">Samba 介绍</a></li>
+<li><a href="Crontab.md">Crontab 介绍</a></li>
+<li><a href="Iptables.md">Iptables 介绍</a></li>
+<li><a href="Hsk-Install.md">花生壳-安装介绍</a></li>
+<li><a href="CentOS-Virtual-Machine-Copy-Settings.md">VMware 克隆 CentOS 后网卡信息修改</a></li>
+<li><a href="JDK-Install.md">JDK 安装</a></li>
+<li><a href="SVN-Install-And-Settings.md">SVN 安装和配置</a></li>
+<li><a href="Tomcat-Install-And-Settings.md">Tomcat 安装和配置、优化</a></li>
+<li><a href="Jenkins-Install-And-Settings.md">Jenkins 安装和配置</a></li>
+<li><a href="Maven-Install-And-Settings.md">Maven 安装和配置</a></li>
+<li><a href="Nexus-Install-And-Settings.md">Nexus 安装和配置</a></li>
+<li><a href="Mysql-Install-And-Settings.md">MySQL 安装和配置</a></li>
+<li><a href="Redis-Install-And-Settings.md">Redis 安装和配置</a></li>
+<li><a href="Solr-Install-And-Settings.md">Solr 安装和配置</a></li>
+<li><a href="Jira-Install-And-Settings.md">Jira 安装和配置</a></li>
+<li><a href="Jenkins-Install-And-Settings.md">Jenkins 安装和配置</a></li>
+<li><a href="TeamCity-Install-And-Settings.md">TeamCity 安装和配置</a></li>
+<li><a href="Nginx-Install-And-Settings.md">Nginx 安装和配置</a></li>
+<li><a href="FastDFS-Install-And-Settings.md">FastDFS 安装和配置</a></li>
+<li><a href="RabbitMQ-Install-And-Settings.md">RabbitMQ 安装和配置</a></li>
+<li><a href="Was-Hacked.md">黑客入侵检查</a></li>
+</ul>
+
+<h2>
+<a id="下一步next" class="anchor" href="#%E4%B8%8B%E4%B8%80%E6%AD%A5next" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>下一步(Next)</h2>
+
+<ul>
+<li>Apache 安装和配置</li>
+<li>Keepalived 安装和配置</li>
+<li>LVS 安装和配置</li>
+<li>Zookeeper 安装和配置</li>
+<li>ActiveMQ 服务安装和配置</li>
+<li>RabbitMQ 服务安装和配置</li>
+<li>GitLab 安装和配置</li>
+<li>Zabbix 安装和配置</li>
+<li>Nagios 安装和配置</li>
+<li>Docker 安装和配置</li>
+<li>ShadowSocks 安装和配置</li>
+<li>Tmux 安装和配置</li>
+<li>sed 学习</li>
+<li>常用脚本</li>
+</ul>
+
+<h2>
+<a id="联系contact" class="anchor" href="#%E8%81%94%E7%B3%BBcontact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>联系(Contact)</h2>
+
+<ul>
+<li>Email：<a href="mailto:judas.n@qq.com">judas.n@qq.com</a>（常用） or <a href="mailto:admin@youmeek.com">admin@youmeek.com</a>（备用）</li>
+<li>Blog：<a href="http://code.YouMeek.com">http://code.YouMeek.com</a>
+</li>
+<li>欢迎捐赠 ^_^：<a href="http://www.youmeek.com/donate">http://www.youmeek.com/donate</a>
+</li>
+</ul>
+
+<h2>
+<a id="gtihub-协同视频教程participate" class="anchor" href="#gtihub-%E5%8D%8F%E5%90%8C%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8Bparticipate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Gtihub 协同视频教程(Participate)</h2>
+
+<ul>
+<li>如果您不会使用 Git 或是 Github 也没关系，请认真学习下面视频教程：</li>
+<li>Judas.n 录制
+
+<ul>
+<li>视频格式：MP4</li>
+<li>分辨率：1920 X 1080</li>
+<li>片长：16 min</li>
+<li>文件大小：62 M</li>
+</ul>
+</li>
+<li>下载
+
+<ul>
+<li>百度云盘：<a href="http://pan.baidu.com/s/1bogmTLd">http://pan.baidu.com/s/1bogmTLd</a>
+</li>
+<li>360 网盘（2fb5）：<a href="https://yunpan.cn/cYez7W9xnHs3c">https://yunpan.cn/cYez7W9xnHs3c</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="github-常用按钮说明" class="anchor" href="#github-%E5%B8%B8%E7%94%A8%E6%8C%89%E9%92%AE%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github 常用按钮说明</h2>
+
+<ul>
+<li>Watch：关注该项目，作者有更新的时候，会在你的 Github 主页有通知消息。</li>
+<li>Star：收藏该项目，在你的头像上有一个“Your stars”链接，可以看到你的收藏列表。</li>
+<li>Fork：复制一份项目到的Github空间上，你可以自己开发自己的这个地址项目，然后 Pull Request 给项目原主人。 </li>
+</ul>
+
+<h2>
+<a id="参与作者汇总author" class="anchor" href="#%E5%8F%82%E4%B8%8E%E4%BD%9C%E8%80%85%E6%B1%87%E6%80%BBauthor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>参与作者汇总(Author)</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">作者(按参与时间排序)</th>
+<th align="left">地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Judas.n</td>
+<td align="left"><a href="http://code.YouMeek.com">http://code.YouMeek.com</a></td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/chenjh0611/Linux-Tutorial">Linux-tutorial</a> is maintained by <a href="https://github.com/chenjh0611">chenjh0611</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
